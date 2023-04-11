@@ -13,7 +13,7 @@
   --secondary-font: 'Source Sans Pro', serif;
   --fw-l: 200;
   --fw-m:400;
-  --fw-b:800;
+  --fw-b:700;
   --fs-base: 1rem;
   
   /* colors  */
@@ -48,7 +48,7 @@
   img {
     max-width: 100%;
     height: auto;
-    
+ 
   }
   
   /********************************************************
@@ -99,7 +99,8 @@
   text-transform: uppercase;
   display: block;
   padding: .8em;
-  font-size: 1em;
+  font-weight: var(--fw-b);
+  font-size: calc(var(--fs-base) * 1.1);
 }
 
 .navigation a:hover {  color: #4BA2C2; }
@@ -113,29 +114,29 @@
 ***********************************************************
 **************************************************************/
  
-
+  main {
+    margin: 1.5em;
+  }
+  
   main article {
     margin: 1em 1.5em 0 1.5em;;
-    /* padding: .5em 0; */
-    /* font-family: var(--primary-font); */
     line-height: 1.4em;
     font-weight: var(--fw-l);
-    /* max-width: 800px; */
   }
 
   main h1 {
     color: #2848BE;
-    font-size: calc(var(--fs-base)*1.5);
-    font-weight: var(--fw-m);
+    font-size: calc(var(--fs-base)*1.3);
+    font-weight: var(--fw-b);
     margin-bottom: .5em;
     line-height: 1.1em;
   }
 
   main h2 {
     color: #B232BD;
-    font-size: calc(var(--fs-base)*1.3);
+    font-size: calc(var(--fs-base)*1.2);
     margin-bottom: .3em;
-    font-weight: var(--fw-m);
+    font-weight: var(--fw-b);
     margin: .5em .5em 1em .5em;
 }
 
@@ -158,6 +159,7 @@ div.prodPic {
   border: solid 1px var(--secondary-color);
   border-radius:  var(--border-radius);
   box-shadow: var(--shadow);  
+  margin: 0;
 }
 
 .prodPic h2 {
@@ -331,11 +333,11 @@ input, textarea, select{
 **************************************************************/
 
 footer div {
-    padding: 1em ;
+    padding: 1em 3em;
     background-color: var(--primary-color);
     margin-top: 2em;
     color: var(--tertiary-color);
-    font-family: 'Source Sans Pro';
+    font-family: var(--primary-font);
 }
 
 #paulina {
