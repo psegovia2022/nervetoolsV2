@@ -38,7 +38,7 @@
 
   body {
     font-family: var(--primary-font);
-    max-width: 1800px;
+    max-width: 2000px;
     margin: auto;
     min-height: 100vh;
     /* width: 100%; */
@@ -139,25 +139,14 @@
   main h2 {
     color: #B232BD;
     font-size: calc(var(--fs-base)*1.2);
-    /* margin-bottom: .3em;
-    margin-top: 1em; */
     font-weight: var(--fw-b);
     margin: 1em ;
 }
 
-  /* main h3 {
-    color: var(--secondary-color);
-    font-weight: var(--fw-l);
-   
-} */
-
-div.prodPic {
+.prodPic {
   display: flex;
   flex-direction: column;
   gap: var(--spacer);
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .artCards {
@@ -375,14 +364,25 @@ footer a:active {  color:var(--secondary-color); }
 
 /* beginning Medium and desktop size screen*/
 
-@media screen and (min-width:701px) {
+@media only screen and (min-width:700px) {
 
+ header {
+  max-width: 100%;
+ }
   .navigation ul {
     justify-content:flex-start;
   }
 
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
   main {
-    font-size: 1.2em;
+    font-size: 1.3em;
     max-width: 70%;
     margin: auto;
     /* margin-left: 5em; */
