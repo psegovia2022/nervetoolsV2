@@ -211,11 +211,6 @@ article p {
     margin: .2em 0 ;
 }
 
-.email {
-    color:var(--secondary-color);
-    /* font-family: var(--primary-font); */
-    font-weight: var(--fw-m);
-}
 
 .DEI ul li::before {
   content: "\2022"; 
@@ -340,10 +335,11 @@ footer div {
     font-family: var(--primary-font);
 }
 
-#paulina {
+.designDeveloper {
   color: var(--secondary-color);
   margin-top: 1em;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: var(--fw-b);
 }
 footer a {
     color:var(--tertiary-color);
@@ -364,11 +360,11 @@ footer a:active {  color:var(--secondary-color); }
 
 /* beginning Medium and desktop size screen*/
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:800px) {
 
- header {
-  max-width: 100%;
- }
+  header {
+    max-width: 100%;
+  }
   .navigation ul {
     justify-content:flex-start;
   }
@@ -382,52 +378,53 @@ footer a:active {  color:var(--secondary-color); }
   }
 
   main {
-    font-size: 1.3em;
-    max-width: 70%;
+    font-size: 1.25em;
+    max-width: 75%;
     margin: auto;
-    /* margin-left: 5em; */
-    /* margin-right: 5em;  */
-}
+  }
 
+  main article {
+    margin: auto;
+    margin-top: 2em;
+  }
 
- main article {
-  margin: auto;
-  margin-top: 2em;
- }
-
-div.prodPic {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
+  div.prodPic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--spacer) / 3);
+    font-size: 1em;
+  }
  
   /*******ABOUT US HOME*********/
-.grouping2 {
-  display: grid;
-  gap: 2em;
-}
+  .grouping2 {
+    display: grid;
+    gap: 1em;
+  }
 
-#p1 {
-  grid-column: 1 / span 3 ;
-  grid-row: 1 / 1;
-}
-#marceloInfo {
-  grid-column: 1/ 2;
-  grid-row: 2 / 3;
-}
+  #p1 {
+    grid-column: 1 / span 3 ;
+    grid-row: 1 / 1;
+  }
 
-#descPic {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
+  #marceloInfo {
+    /* grid-column: 1/ 2;
+    grid-row: 2 / 3; */
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+  }
 
-.marcelo h2, .marcelo h3, .marcelo a {
-  margin: .1em;
-}
+  #descPic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 
-#simpleForm {
-  max-width: 500px;
-}
+  .marcelo h2, .marcelo h3, .marcelo a {
+    margin: .1em;
+  }
+
+  #simpleForm {
+    max-width: 500px;
+  }
 }
 
   
