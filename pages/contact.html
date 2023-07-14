@@ -10,31 +10,41 @@
     <meta name="author" content="Paulina Segovia, Marcelo Aguilar Rivera">
 
     <title>Nervetools by Hi Green Tech</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+  
+      <!-- FONT AWESOME -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+      <!-- STYLES -->
+      <link rel="stylesheet" href="../css/reset.css">
+      <link rel="stylesheet" href="../css/main.css">
+      
+      <script src="../scripts/script.js" async></script>
    
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <img  class="logo" src="../images/Logo.svg" alt="Nerve Tools logo">
+      <!-- <div class="logo">
+      <img  class="logo" src="images/Logo.svg" alt="Nerve Tools logo">
+      </div> -->
+  
+      <div class="topnav" id="myTopnav">
+        <!-- <nav class="navigation"> -->
+          <a href="../index.html" >Home</a>
+          <a href="../pages/products.html" >Catalog</a>
+          <a href="#" class="active" >Contact</a>
+         
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            <!-- <i class="fa-regular fa-rectangle-xmark closeIcon"></i>  -->
+          </a> 
+          
+        <!-- </nav> -->
       </div>
-      
-      <div id="nav">
-        <nav class="navigation">   
-          <ul>
-            <li><a href="../index.html" >Home</a></li>
-            <li><a href="../pages/products.html" >Catalog</a></li>
-            <li><a href="#" class="current">Contact</a></li>
-          </ul>            
-        </nav>
-      </div>
-      
     </header>
       
         <main>
@@ -44,7 +54,7 @@
             <div id="simpleForm">
               <p>If you have any questions or need help, please email us.</p>
               <p>We look forward to hearing from you.</p>
-              <p >Email us at <a href="mailto:aguilarr_m@hotmail.com">aguilarr_m@hotmail.com</a></p>
+              <p >Email us at <a href="mailto:aguilarr_m@hotmail.com" class="inLink">aguilarr_m@hotmail.com</a></p>
             </div>
           </article>
             

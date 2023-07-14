@@ -10,30 +10,43 @@
     <meta name="author" content="Paulina Segovia, Marcelo Aguilar Rivera">
 
     <title>Nervetools by Hi Green Tech</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="scripts/script.js" async></script>
     
   </head>
 
 <body>
 
   <header>
-    <div class="logo">
+    <!-- <div class="logo">
     <img  class="logo" src="images/Logo.svg" alt="Nerve Tools logo">
-    </div>
+    </div> -->
 
-    <div id="nav">
-      <nav class="navigation">
-        <ul>
-          <li><a href="#" class="current">Home</a></li>
-          <li><a href="pages/products.html">Catalog</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>      
-      </nav>
-    </div>
+    <nav class="topnav" id="myTopnav">
+      <!-- <nav class="navigation"> -->
+        <a href="#home" class="active">Home</a>
+        <a href="pages/products.html" >Catalog</a>
+        <a href="pages/contact.html" >Contact</a>
+       
+        <a href="#" class="icon">
+          <i class="fa fa-bars"></i>
+          <!-- <i class="fa-regular fa-rectangle-xmark closeIcon"></i>  -->
+        </a> 
+        
+      <!-- </nav> -->
+    </nav>
   </header>
 
   <main>
@@ -66,13 +79,13 @@
       <article class="artCards">
         <h2> Brain in a Dish (recording)</h2>
         <img src="images/BrainDishProjectSm.jpg" alt="brain dish project">
-        <p>Pictorical representation of a 64chs ring based on four RHS Stim/Amplifier INTAN chips that can be interfaced with a electrodes array in a dish.</p>
+        <p>Pictorical representation of a 64chs ring based on four RHS Stim/Amplifier INTAN chips that can be interfaced with MEA electrodes array.</p>
       </article>
 
       <article class="artCards">
         <h2>Recording and Stimulation System</h2>
         <img src="images/BrainDishProject2Sm.jpg" alt="brain dish project">
-        <p>Pictorical representation of a 64chs ring based on four RHS Stim/Amplifier INTAN chips that can be interfaced with a electrodes array in a dish.</p>
+        <p>Pictorical representation of a 64chs ring based on four RHS Stim/Amplifier INTAN chips that can be interfaced with MEA electrodes array.</p>
       </article>
 
       <article class="artCards">
@@ -84,7 +97,7 @@
       </article>
   </div>
   <div class="grouping">
-    <p>In our<a href="pages/products.html"> catalog</a>, you can find the parts that are available to download for free, while all the codes and dataset are available in our <a href="https://github.com/nervetools" target="_blank"> github account</a>. </p>
+    <p>In our<a href="pages/products.html" class="inLink"> catalog</a>, you can find the parts that are available to download for free, while all the codes and dataset are available in our <a href="https://github.com/nervetools" class="inLink" target="_blank"> github account</a>. </p>
   </div>
   </article>
 
@@ -100,10 +113,10 @@
         <h2>Marcelo Aguilar-Rivera</h2>
         <h3 id="founder">Founder & CTO</h3>
         <p>
-        <a href="mailto:aguilarr_m@hotmail.com">Email: aguilarr_m@hotmail.com</a> 
+        <a href="mailto:aguilarr_m@hotmail.com" class="inLink">Email: aguilarr_m@hotmail.com</a> 
         </p>
         <p>
-        <a href="https://www.linkedin.com/in/marcelo-aguilar-rivera/" target="_blank">Linkedin: Marcelo Aguilar-Rivera</a>
+        <a href="https://www.linkedin.com/in/marcelo-aguilar-rivera/" class="inLink" target="_blank">Linkedin: Marcelo Aguilar-Rivera</a>
         </p>
       </section>
      
@@ -124,9 +137,9 @@
 </main>
 <footer>
   <div>
-    <p class="designDeveloper"> Website designed by <a class="designDeveloper"
+    <p class="designDeveloper"> Original design by <a class="designDeveloper"
       href="https://trishdaugherty.com/" target="_blank">Trish Daugherty </a> </p>
-    <p class="designDeveloper"> Website developed by <a class="designDeveloper" href="https://www.linkedin.com/in/paulina-segovia-candia/" target="_blank">Paulina Segovia Candia </a> </p>
+    <p class="designDeveloper"> Website adapted and developed by <a class="designDeveloper" href="https://www.linkedin.com/in/paulina-segovia-candia/" target="_blank">Paulina Segovia Candia </a> </p>
     <p class="copy">&copy; NerveTools 2023 Santiago Chile</p>
   </div>
 </footer>
